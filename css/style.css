@@ -1,0 +1,1212 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+
+  background-color: #ffffff;
+  background-image: 
+    url('../img/background-header.jpg');
+                    
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  padding-bottom: 30px;
+
+  text-align: center;
+  font-size: 36px;
+  line-height: 27px;
+  font-weight: 300;
+  color: #333333;
+
+  position: relative;
+}
+
+h2::after {
+  content: "";
+
+  width: 100px;
+  height: 30px;
+  
+  background-image: url('../img/more_horizmore_horiz.png');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -50px;
+}
+
+h2 > span {
+  font-weight: 600;
+  color: #333333;
+}
+
+.main-header {
+  position: relative;
+
+  color: #ffffff;
+  min-height: 1000px;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  display: flex;
+}
+
+.main-navigation .header-logo {
+  padding: 25px 0;
+
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.main-navigation .navigation-list {
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+
+  list-style: none;
+}
+
+.navigation-list a {
+  display: block;
+
+  margin-right: 29px;
+  padding: 25px 0;
+
+  color: #ffffff;
+}
+
+.navigation-list li:last-child a {
+  margin-right: 0;
+}
+
+.main-header-wrapper {
+  border-bottom: 1px solid #3e9ee7;
+  margin-bottom: 285px;
+}
+
+.header-introduction {
+  width: 653px;
+}
+
+.header-introduction h1 {
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: 300;
+
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.header-introduction p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+
+  margin: 0;
+  margin-bottom: 55px;
+}
+
+.button {
+  background-color: #ffffff;
+  border-radius: 100px;
+
+  padding: 20px 30px;
+
+  color: #ffffff;
+}
+
+.button-videos {
+  padding-left: 50px;
+  margin-right: 30px;
+
+  color: #2095f2;
+  font-weight: 600;
+}
+
+.button-downloads {
+  background-color: transparent;
+
+  padding: 19px 29px;
+  border: 1px solid #ffffff;
+}
+
+.social-list {
+  display: flex;
+
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+
+
+
+  margin: 0;
+  margin-left: -115px;
+  padding: 0;
+
+
+  list-style: none;
+}
+
+.social-list li:last-child a {
+  margin-right: 0;
+}
+
+.social-list .social-button {
+  box-sizing: border-box;
+  width: 70px;
+  display: block;
+  margin-right: 10px;
+  padding: 25px 23px 15px;
+
+  text-align: center;
+
+  background-color: #ffffff;
+}
+
+.social-button img {
+  width: 26px;
+  height: 29px;
+}
+
+.about-app {
+  background-color: #f4f4f4;
+
+  padding-top: 120px;
+}
+
+.about-app h2 {
+  text-align: left;
+}
+
+.about-app h2::after {
+  display: none;
+}
+
+.about-app-column {
+  width: 555px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.about-app p {
+  line-height: 26px;
+
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.about-app-button {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.about-app-button button {
+  width: 165px;
+  /* box-sizing: border-box; */
+
+  background-color: #2095f2;
+
+  padding: 25px 20px;
+  padding-left: 47px;
+  margin-bottom: 120px;
+
+  border: none;
+  border-radius: 5px;
+
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  word-wrap: break-word;
+}
+
+.about-app .container {
+  background-image: url('../img/phone-background.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.features {
+  background-color: #ffffff;
+
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.features h2 {
+  margin: 0;
+
+  margin-bottom: 25px;
+  padding-bottom: 30px;
+
+
+  position: relative;
+
+  font-size: 36px;
+  font-weight: 300;
+}
+
+.features h2::after {
+  content: "";
+
+  width: 100px;
+  height: 30px;
+  
+  background-image: url('../img/more_horizmore_horiz.png');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -50px;
+
+}
+
+.features p {
+  margin: 0;
+  margin-bottom: 50px;
+
+}
+
+.features-wrapper {
+  width: 640px;
+  text-align: center;
+
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.features-column-left {
+  width: 360px;
+
+  text-align: right;
+}
+
+.features-column-left li {
+  padding-right: 127px;
+
+  position: relative;
+}
+
+.features-column-left li::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 30px;
+
+  width: 64px;
+  height: 64px;
+
+  background-color: #2095f2;
+  background-image: url('../img/security.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.features-column-right li {
+  padding-left: 127px;
+
+  position: relative;
+}
+
+.features-column-right li::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 30px;
+
+  width: 64px;
+  height: 64px;
+
+  background-color: #2095f2;
+  background-image: url('../img/security.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.features-column-left ul,
+.features-column-right ul {
+  list-style: none;
+  
+  margin: 0;
+  padding: 0;
+}
+
+.features-column-left h3 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.features-column-right {
+  width: 360px;
+
+  text-align: left;
+}
+
+.features-column-right h3 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.features-column-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 60px;
+  padding-bottom: 100px;
+
+  background-image: url('../img/background-phone.png');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.videos {
+  
+  background-image: url('../img/background-videos.png');
+  min-height: 600px;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  box-shadow: inset 0 0 0 1000px rgba(31,31,31,0.7);
+}
+
+.videos .play {
+  width: 60px;
+  height: 60px;
+
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  left: 50%;
+  margin-left: -30px;
+
+  background-color: #ffffff;
+  background-image: url('../img/play.png');
+  background-repeat: no-repeat;
+  background-position: 56% center;
+  border-radius: 50%;
+}
+
+.customize {
+  padding-top: 120px;
+  padding-bottom: 60px;
+
+  background-image: url('../img/phones.png');
+  background-position: 750px 90%;
+  background-repeat: no-repeat;
+}
+
+.customize h2 {
+  margin: 0;
+  padding-bottom: 30px;
+  margin-bottom: 25px;
+
+  text-align: center;
+  font-size: 36px;
+  line-height: 27px;
+  font-weight: 300;
+}
+
+.customize li p {
+  margin: 0;
+
+  margin-bottom: 50px;
+}
+
+.customize > p {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 650px;
+
+
+
+  text-align: center;
+}
+
+.customize h3 {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+
+
+.customize ul {
+  width: 555px;
+  list-style: none;
+  
+  padding: 0;
+  margin: 0;
+}
+
+.customize li {
+  padding-left: 100px;
+  
+  position: relative;
+}
+
+.customize li::after {
+  content: "";
+
+  width: 64px;
+  height: 64px;
+
+  background-color: #2095f2;
+  background-image: url('../img/assessment.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: absolute;
+  top: 5px;
+  left: 0;
+  
+  border-radius: 50%;
+}
+
+.creative-intefrace {
+  background-color: #2095f2;
+
+  padding-top: 120px;
+  padding-bottom: 60px;
+
+  color: #ffffff;
+}
+
+.creative-intefrace h2 {
+  color: #ffffff;
+}
+
+.creative-intefrace span {
+  color: #ffffff;
+}
+
+.creative-intefrace > .container > p {
+  width: 650px;
+  text-align: center;
+
+  margin: 0 auto;
+  margin-bottom: 90px;
+
+}
+
+.creative-intefrace ul {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+  text-align: center;
+
+  padding: 0;
+  margin: 0;
+}
+
+.creative-intefrace ul li {
+  box-sizing: border-box;
+  width: 360px;
+  border: 1px solid #7fbeef;
+
+  padding: 60px 15px 40px 15px;
+  position: relative;
+}
+
+.creative-intefrace ul li::before {
+  content: "";
+
+  width: 60px;
+  height: 60px;
+
+  background-color: #ffffff;
+  background-image: url('../img/alarm.png');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  top: -30px;
+  margin-left: 50%;
+  margin-left: -30px;
+
+  border-radius: 50%;
+}
+
+.creative-intefrace ul li::after {
+  content: "";
+
+  width: 72px;
+  height: 72px;
+
+  background-color: #ffffff;
+
+  position: absolute;
+  top: -36px;
+  margin-left: 50%;
+  margin-left: -36px;
+
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+.creative-intefrace ul li:hover::after {
+  opacity: 0.4;
+}
+
+.creative-intefrace ul h3 {
+  font-size: 24px;
+  line-height: 26px;
+
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.creative-intefrace ul p {
+  margin: 0;
+}
+
+.screenshots {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+.screenshots > p {
+  width: 650px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+
+  text-align: center;
+}
+
+.screenshots figure {
+  margin: 0;
+  padding: 0;
+}
+
+.screenshots img {
+  vertical-align: middle;
+}
+
+.statistic {
+  background-color: #f4f3f3;
+  background-position: center;
+  padding: 80px 0;
+}
+
+.statistic ul {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.statistic ul li {
+  width: 262px;
+  padding-top: 55px;
+  
+  position: relative;
+
+  
+  text-align: center;
+}
+
+.statistic ul li::before {
+  content: "";
+
+  width: 50px;
+  height: 50px;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -25px;
+
+  background-image: url('../img/cloud_download.png');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.team {
+  padding-top: 120px;
+  padding-bottom: 100px;
+
+  text-align: center;
+}
+
+.team > p {
+  width: 650px;
+
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.team h2 {
+  margin-bottom: 25px;
+}
+
+.team ul {
+  list-style: none;
+  
+  margin: 0;
+  padding: 0;
+}
+
+.team figure {
+  margin: 0;
+  padding: 0;
+
+  width: 264px;
+  height: 264px;
+
+  overflow: hidden;
+}
+
+.team ul li {
+  width: 264px;
+}
+
+.team .team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-list li {
+
+  box-shadow: 0px 2px 6px rgba(59,59,59,0.15);
+}
+
+.team-list li:hover {
+  box-shadow: 0 6px 12px rgba(59,59,59,0.20);
+}
+
+.team b {
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 10px;
+
+}
+
+.team-list p {
+  margin: 0;
+
+  font-size: 16px;
+  color: #676767;
+}
+
+.feedback {
+  padding-top: 130px;
+
+  background-color: #2095f2;
+
+  color: #ffffff;
+}
+
+.feedback .container {
+  background-image: url('../img/background-two-phone.png');
+  background-repeat: no-repeat;
+  background-position: -15px top;
+
+  padding-bottom: 125px;
+}
+
+.feedback h2, 
+.feedback span {
+  color: #ffffff;
+}
+
+.feedback h2::after {
+  background-image: url('../img/more_horizmore_horiz_white.png');
+}
+
+.review {
+  box-sizing: border-box;
+  width: 652px;
+  padding: 40px;
+  padding-left: 140px;
+  margin-left: auto;
+
+  background-color: #ffffff;
+
+  color: #676767;
+  position: relative;
+}
+
+.review::before {
+  position: absolute;
+  left: 30px;
+  top: 41px;
+  content: "";
+  width: 94px;
+  height: 94px;
+
+  background-image: url('../img/user-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.review:hover {
+  box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.15);
+}
+
+.review blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.review b {
+  color: #333333;
+}
+
+.review span {
+  display: block;
+  color: #676767;
+
+  margin-top: -5px;
+}
+
+.feedback h3 {
+  margin: 0;
+  margin-bottom: 85px;
+  padding-bottom: 30px;
+
+  text-align: center;
+  font-size: 36px;
+  line-height: 27px;
+  font-weight: 300;
+  color: #ffffff;
+
+  position: relative;
+}
+
+.feedback h3 > span {
+  font-weight: 600;
+}
+
+.feedback h3::after {
+  content: "";
+
+  width: 100px;
+  height: 30px;
+  
+  background-image: url('../img/more_horizmore_horiz_white.png');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.feedback-wrapper {
+  width: 652px;
+  margin-left: auto;
+}
+
+.review-list {
+  display: flex;
+  width: 70px;
+  padding: 0;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+
+  list-style: none;
+}
+
+.review-list button {
+  background-color: transparent;
+  position: relative;
+
+  box-sizing: border-box;
+
+  padding: 6px 6px;
+  border-radius: 50%; 
+  border: 1px solid #000000;
+  margin-right: 7px;
+}
+
+.price-plan {
+  color: #676767;
+
+  padding-top: 130px;
+  padding-bottom: 200px;
+
+  text-align: center;
+}
+
+.price-plan > h2 {
+  font-weight: 500;
+  color: #333333;
+
+  padding-bottom: 40px;
+}
+
+.price-plan > p {
+  margin: 0 auto;
+  margin-bottom: 85px;
+  width: 650px;
+}
+
+.price-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-list,
+.price-list  ul {
+  list-style: none;
+
+  padding: 0;
+  margin: 0;
+
+}
+
+.price-list ul {
+  padding-bottom: 30px;
+  padding-top: 40px;
+}
+
+.price-list h3 {
+  margin: 0;
+}
+
+.price-item {
+  width: 361px;
+
+  box-shadow: 0 4px 6px rgba(59, 59, 59, 0.15); 
+}
+
+.price-item:hover {
+  box-shadow: 0 4px 18px rgba(59, 59, 59, 0.15);
+}
+
+.price-item > h3 {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px 10px;
+
+  background-color: #f4f3f3;
+
+  color: #333333;
+  font-size: 30px;
+  line-height: 27px;
+}
+
+.price {
+  display: block;
+
+  padding-top: 40px;
+
+  margin-bottom: 25px;
+
+  font-size: 60px;
+  font-weight: 300;
+  color: #333333;
+  word-break: break-all;
+}
+
+.price-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  position: relative; 
+}
+
+.price-wrapper::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  height: 1px;
+  width: 180px;
+  margin: 0 auto;
+
+  background-color: #e7e7e7;
+}
+
+.price > span {
+  margin-left: -13px;
+
+  font-size: 24px;
+  vertical-align: super;
+}
+
+.price-item button {
+  box-sizing: border-box;
+  width: 150px;
+  min-height: 50px;
+  border: 2px solid #e7e7e7;
+
+  padding: 10px 10px;
+  margin-bottom: 50px;
+
+  border-radius: 50px;
+
+  background-color: transparent;
+
+  font-size: 14px;
+  color: #333333;
+  line-height: 19px;
+  vertical-align: center;
+}
+
+.price-item:hover > h3,
+.price-item:hover button {
+  background-color: #2095f2;
+
+  border: none;
+
+  color: #ffffff;
+}
+
+.price-item button:hover {
+  background-color: #31b8d7;
+}
+
+.Questions {
+  background-color: #f4f4f4;
+
+  min-height: 670px;
+  box-sizing: border-box;
+
+  padding-top: 20px;
+  padding-bottom: 180px;
+}
+
+.Questions .wrapper {
+  width: 555px;
+
+  text-align: left;
+}
+
+.Questions h2 {
+  text-align: left;
+}
+
+.Questions h2::after {
+  left: 50px;
+}
+
+.Questions .container {
+  position: relative;
+}
+
+.Questions .container::before {
+  content: "";
+
+  width: 426px;
+  height: 671px;
+
+  position: absolute;
+  top: -45px;
+  right: 15px;
+
+
+  background-image: url('../img/background-absolute.png');
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.Questions details {
+  margin-bottom: 13px;
+}
+
+details > summary:first-of-type {
+  list-style: none;
+}
+
+details > summary {
+  position: relative;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 100px;
+  padding-left: 25px;
+
+  background-color: #2095f2;
+  user-select: none;
+  cursor: pointer;
+
+  color: #ffffff;
+}
+
+details > summary::before {
+  content: "";
+
+  width: 27px;
+  height: 27px;
+
+  position: absolute;
+  right: 25px;
+  top: 12px;
+
+  background-color: #ffffff;
+}
+
+details > summary::after {
+  content: "";
+
+  position: absolute;
+  top: 17px;
+  right: 28px;
+
+  width: 18px;
+  height: 16px;
+
+  background-image: url('../img/down-arrow.svg');
+  background-repeat: no-repeat;
+}
+
+details[open] > summary::after {
+  transform: rotate(180deg);
+  
+  top: 16px;
+  right: 30px;
+}
+
+details > summary + p {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  
+  margin: 0;
+  padding: 25px 0;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  color: #676767;
+}
+
+.download-app {
+  padding-top: 20px;
+  padding-bottom: 250px;
+
+  box-shadow: inset 0 0 0 1000px rgba(21, 36, 53, 0.8);
+  background-image: url('../img/Overlay.jpg');
+                    
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+  text-align: center;
+}
+
+.download-app h2 {
+  color: #ffffff;
+}
+
+.download-app h2 > span {
+  color: #ffffff;
+}
+
+.download-app h2::after {
+  background-image: url('../img/more_horizmore_horiz_white.png');
+}
+
+.download-app .button {
+  background-color: #2095f2;
+  box-sizing: border-box;
+
+  padding: 12px 30px;
+  padding-left: 45px;
+
+  width: 170px;
+}
+
+.download-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 375px;
+  margin: 0 auto;
+}
+
+.download-app .container > p {
+  width: 650px;
+  margin: 0 auto;
+  margin-bottom: 85px;
+}
+
+.download-app > .container {
+  position: relative;
+}
+
+.download-app > .container::after {
+  content: "";
+
+  position: absolute;
+  bottom: -400px;
+  left: 50px;
+  right: 0;
+
+
+  width: 1003px;
+  height: 259px;
+
+  background-image: url('../img/phone-inset.png');
+
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
