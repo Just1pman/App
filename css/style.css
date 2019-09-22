@@ -1,5 +1,5 @@
 body {
-  min-width: 1140px;
+  min-width: 1170px;
   margin: 0;
   padding: 0;
 
@@ -90,7 +90,8 @@ h2 > span {
 }
 
 .container {
-  width: 1140px;
+  width: 1170px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
