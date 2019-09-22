@@ -16,6 +16,14 @@ body {
   background-repeat: no-repeat;
 }
 
+a:focus,
+button:focus,
+input:focus,
+summary:focus,
+iframe:focus  {
+  outline: #ed267f dotted 4px;
+}
+
 a {
   text-decoration: none;
 }
@@ -1131,8 +1139,9 @@ details > summary + p {
 }
 
 .download-app {
-  padding-top: 20px;
-  padding-bottom: 250px;
+  padding-top: 120px;
+  padding-bottom: 170px;
+  margin-bottom: 250px;
 
   box-shadow: inset 0 0 0 1000px rgba(21, 36, 53, 0.8);
   background-image: url('../img/Overlay.jpg');
@@ -1142,6 +1151,12 @@ details > summary + p {
 
   color: #ffffff;
   text-align: center;
+}
+
+.download-app .container > p {
+  width: 650px;
+  margin: 0 auto;
+  margin-bottom: 85px;
 }
 
 .download-app h2 {
@@ -1160,10 +1175,42 @@ details > summary + p {
   background-color: #2095f2;
   box-sizing: border-box;
 
-  padding: 12px 30px;
-  padding-left: 45px;
+  padding: 12px 20px;
+  padding-left: 65px;
+
+  position: relative;
 
   width: 170px;
+}
+
+.download-app .button-android::before {
+  content: "";
+
+  width: 19px;
+  height: 23px;
+
+  position: absolute;
+  left: 30px;
+  top: 15px;
+
+  background-image: url('../img/android-icon.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.download-app .button-apple::before {
+  content: "";
+
+  width: 19px;
+  height: 23px;
+
+  position: absolute;
+  left: 30px;
+  top: 12px;
+
+  background-image: url('../img/apple.png');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .download-button-wrapper {
@@ -1171,12 +1218,6 @@ details > summary + p {
   justify-content: space-between;
   width: 375px;
   margin: 0 auto;
-}
-
-.download-app .container > p {
-  width: 650px;
-  margin: 0 auto;
-  margin-bottom: 85px;
 }
 
 .download-app > .container {
@@ -1187,7 +1228,7 @@ details > summary + p {
   content: "";
 
   position: absolute;
-  bottom: -400px;
+  bottom: -340px;
   left: 50px;
   right: 0;
 
@@ -1195,10 +1236,520 @@ details > summary + p {
   width: 1003px;
   height: 259px;
 
-  background-image: url('../img/phone-inset.png');
-
+  background-image: url('../img/phone-horizontal.png');
+  background-position: 20px center;
   background-repeat: no-repeat;
 }
+
+.Latest-News {
+  padding-bottom: 130px;
+}
+
+.Latest-News > p {
+  width: 650px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.Latest-News ul {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.Latest-News figure {
+  margin: 0;
+}
+
+.Latest-News .category {
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  
+  display: table-cell;
+
+  box-sizing: border-box;
+  width: 70px;
+  height: 20px;
+  border-radius: 2px;
+
+  background-color: #000000;
+}
+
+.latest-item {
+  width: 361px;
+
+  box-shadow: 0 6px 10px rgba(59, 59, 59, 0.15);
+}
+
+.latest-item:hover {
+  box-shadow: 0 6px 20px rgba(59, 59, 59, 0.25);
+}
+
+.latest-item:hover button {
+  background-color: #2095f2;
+  
+  color: #ffffff;
+
+  box-shadow: 0 3px 20px rgba(59,59,59,0.25);
+}
+
+.latest-item button:hover {
+  background-color: #31b8d7;
+}
+
+.latest-item h3 {
+  font-size: 18px;
+  line-height: 27px;
+  color: #333333;
+
+  margin: 0;
+  margin-top: 8px;
+  padding-bottom: 8px;
+}
+
+.Latest-News > p {
+  width: 650px;
+  
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.latest-item div {
+  font-size: 12px;
+  
+  margin-bottom: 10px;
+}
+
+.latest-item div time {
+  color: #676767;
+}
+
+.latest-item div a {
+  color: #2095f2;
+}
+
+.latest-item p {
+  margin: 0;
+
+  color: #676767;
+  line-height: 26px;
+}
+
+.latest-item button {
+  background-color: transparent;
+  border: 1px solid #e7e7e7;
+
+  width: 110px;
+  height: 36px;
+
+  margin: 30px 0;
+  margin-top: 15px;
+  padding: 0;
+
+  color: #2095f2;
+}
+
+.latest-wrapper {
+  padding-left: 25px;
+}
+
+.latest-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe {
+  background-color: #d0cece;
+
+  padding: 130px 0;
+}
+
+.subscribe > .container > p {
+  width: 650px;
+  text-align: center;
+
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.subscribe form {
+  width: 555px;
+  position: relative;
+
+  margin: 0 auto;
+}
+
+.subscribe input[type="email"] {
+  box-sizing: border-box;
+  width: 555px;
+  height: 60px;
+  
+  padding-left: 55px;
+  padding-right: 180px;
+
+  color: #ababab;
+  font-weight: 500;
+  
+  border-radius: 50px;
+  border: none;
+
+  position: relative;
+}
+
+.subscribe label::before {
+  content: "";
+
+  width: 17px;
+  height: 14px;
+
+  position: absolute;
+  z-index: 1;
+  left: 25px;
+  top: 23px;
+
+  background-image: url('../img/mail_outline.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.subscribe .button {
+  box-sizing: border-box;
+  width: 170px;
+  height: 60px;
+
+  padding-left: 27px;
+  padding-right: 45px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  background-color: #2095f2;
+  border: none;
+  text-align: center;
+  line-height: 14px;
+}
+
+.subscribe .button:active,
+.subscribe .button:focus  {
+  top: 1px;
+}
+
+.subscribe .button::after {
+  content: "";
+
+  width: 14px;
+  height: 10px;
+
+  position: absolute;
+  right: 22px;
+  top: 25px;
+
+  background-image: url('../img/keyboard_backspace.png');
+}
+
+.touch {
+  padding-top: 130px;
+  padding-bottom: 100px;
+}
+
+.touch > p {
+  width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.contacts-list  {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  width: 256px;
+}
+
+.contacts-list > li {
+  position: relative;
+}
+
+.contacts-list > .contacts-address::after {
+  content: "";
+
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  background-image: url('../img/location_on.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contacts-list > .contacts-phone::after {
+  content: "";
+
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  background-image: url('../img/phone.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contacts-list > .contacts-email::after {
+  content: "";
+
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  background-image: url('../img/email.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contacts-list > li > a {
+  display: block;
+
+  box-sizing: border-box;
+  padding: 0 45px;
+  padding-bottom: 22px;
+  padding-top: 70px;
+
+  width: 100%;
+
+  color: #ffffff;
+  text-align: center;
+  font-weight: 300;
+}
+
+.contacts-address  a {
+  background-color: #1e88e5;
+}
+
+.contacts-phone a {
+  background-color: #1976d2;
+}
+
+.contacts-email a {
+  background-color: #1565c0;
+}
+
+.socials-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+  padding: 46px 33px;
+  margin: 0;
+  list-style: none;
+  width: 256px;
+
+  background-color: #0a5cba;
+
+}
+
+.socials-list a {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+
+  position: relative;
+}
+
+.socials-list li:last-child a {
+  margin-right: 0;
+}
+
+.socials-list .socials::before {
+  content: "";
+
+  position: absolute;
+  top: 12px;
+  left: 13px;
+
+  width: 15px;
+  height: 16px;
+}
+
+.socials-list .social-facebook::before {
+  background-image: url('../img/facebook.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.socials-list .social-twitter::before {
+  background-image: url('../img/twitter.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.socials-list .social-gmail::before {
+  background-image: url('../img/google.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.socials-list .social-linkedin::before {
+  background-image: url('../img/linkedin.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.socials-list a:nth-last-child() {
+  margin-left: 0;
+}
+
+.communication {
+  display: flex;
+  justify-content: space-between;
+  width: 648px;
+  box-shadow: 0 4px 30px 2px rgba(59, 59, 59, 0.15);
+}
+.Message {
+  background-color: #2095f2;
+  width: 392px;
+  padding: 38px 0;
+}
+
+.touch .map {
+  height: 528px;
+  width: 457px;
+}
+
+.message-form button {
+  width: 170px;
+  height: 50px;
+  padding: 0;
+  padding-bottom: 2px;
+  padding-right: 20px;
+
+  position: relative;
+
+  color: #2095f2;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 4px 14px rgba(59, 59, 59, 0.25);
+}
+
+.message-form button:active {
+  top: 1px;
+}
+
+.message-form button::before {
+  content: "";
+
+  width: 16px;
+  height: 14px;
+
+  position: absolute;
+  right: 20px;
+  top: 18px;
+
+  background-image: url('../img/send.png');
+  
+}
+
+.message-form {
+  text-align: center;
+}
+
+.Message h3 {
+  margin: 0 auto;
+
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+
+  position: relative;
+}
+
+.Message h3::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+
+  height: 3px;
+  width: 60px;
+
+  background-color: #ffffff;
+}
+
+.message-input {
+  box-sizing: border-box;
+  padding: 20px;
+  height: 50px;
+  width: 320px;
+
+  background-color: #1488e5;
+
+  color: #ffffff;
+
+  border: none;
+  border-radius: 2px;
+
+  margin-bottom: 20px;
+}
+
+.message-form textarea {
+  resize: none;
+  height: 143px;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer {
+  background-color: #2a2a2a;
+
+  color: #b8b8b8;
+  text-align: center;
+}
+
+.main-footer p {
+  margin: 0;
+
+  padding: 35px 0;
+}
+
 
 
 
